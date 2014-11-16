@@ -3,6 +3,8 @@
 data <- read.csv("household_power_consumption.txt", sep = ";", stringsAsFactors = F)
 subData <- subset(data, Date == "1/2/2007"| Date == "2/2/2007")
 
+#set locale
+Sys.setlocale("LC_TIME", "English")
 
 #plot
 
